@@ -1,0 +1,484 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+}
+
+ul li {
+	list-style: none;
+	display: block;
+}
+table{
+	border:1px solid #DDD;
+	border-collapse: collapse;
+	}
+th,td{
+	border:1px solid #DDD;
+	border-collapse: collapse;
+	padding: 8px 0 8px 10px;
+	}
+.left-side {
+	width: 300px;
+	position: fixed;
+	height: 100%;
+	background: #fafafa;
+	border-right: 1px solid #e6e6e6;
+}
+
+.first-part {
+	width: 300px;
+	height: 50px;
+}
+
+.function {
+	width: 120px;
+	height: 50px;
+	float: right;
+}
+
+.function img {
+	width: 20px;
+	height: 20px;
+	padding: 15px 0;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.float-document {
+	width: 300px;
+	height: 100%;
+}
+
+.float-document li {
+	width: 100%;
+	height: 55px;
+	cursor: pointer;
+}
+
+.float-document li:hover {
+	background: rgb(200, 200, 200);
+}
+
+.font-img {
+	width: 80%;
+	height: 55px;
+	font-size: 15px;
+	line-height: 55px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.font-img img {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	transition: 0.2s;
+	
+}
+
+.font-img i {
+	position: absolute;
+	right: 0;
+}
+.son_second{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 50px;
+	cursor: pointer;
+	height: 55px;
+	font-size: 15px;
+	line-height: 55px;
+	margin: 0 auto;
+	position: relative;
+}
+.son_second img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	transition: 0.2s;
+	margin-right: 30px;
+}
+.son_second i {
+	position: absolute;
+	right: 0;
+}
+.son_second:hover{
+	background: rgb(200, 200, 200);
+}
+.second_children{
+	display: none ;
+	
+}
+.second_children>span{
+	display: inline-block;
+	
+	padding-left:70px ;
+
+	width: 100%;
+	height: 55px;
+	font-size: 15px;
+	line-height: 55px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.children{
+	width: 100%;
+	display: none;
+}
+.children>span{
+	display: inline-block;
+	width: 100%;
+	height: 55px;
+	font-size: 15px;
+	line-height: 55px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding-left: 50px;
+}
+.children span:hover{
+	background: rgb(200, 200, 200);
+}
+.place {
+	position: relative;
+	top: -2px;
+	left: 0;
+}
+
+.right-side {
+	margin-left: 300px;
+	height: 100%;
+}
+
+.body-document {
+	width: 800px;
+	min-height: 800px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.trigger {
+	width: 40px;
+	height: 80px;
+	position: fixed;
+	top: 80px;
+	right: 40px;
+}
+
+.trigger ul {
+	width: 100%;
+	height: 100%;
+}
+
+.trigger li img {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+/*回顶部*/
+
+.backtop {
+	width: 80px;
+	height: 80px;
+	background: bisque;
+	position: fixed;
+	right: 20px;
+	bottom: 150px;
+	cursor: pointer;
+	display: none;
+	transition: 0.3s;
+}
+
+.backtop img {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+}
+
+.backtop:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px 0px #000000;
+}
+
+
+/*聊天气泡*/
+
+.bubble {
+	width: 115px;
+	height: 32px;
+	position: fixed;
+	top: 10px;
+	left: 250px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.square {
+	color: white;
+	line-height: 32px;
+	text-align: center;
+	background: black;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.square::before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: inherit;
+	left: -5px;
+	/*向左侧外部延伸箭头box的一半宽度*/
+	position: absolute;
+	transform: rotate(45deg);
+	/*旋转45度*/
+	top: 50%;
+	/*箭头在数值方向上居中*/
+	margin-top: -5px;
+}
+
+.bubbletwo {
+	width: 80px;
+	height: 32px;
+	position: fixed;
+	top: 10px;
+	left: 85px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.squaretwo {
+	color: white;
+	line-height: 32px;
+	text-align: center;
+	background: black;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.squaretwo::after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: inherit;
+	left: 75px;
+	/*向左侧外部延伸箭头box的一半宽度*/
+	position: absolute;
+	transform: rotate(45deg);
+	/*旋转45度*/
+	top: 50%;
+	/*箭头在数值方向上居中*/
+	margin-top: -5px;
+}
+
+.bubblethree {
+	width: 80px;
+	height: 32px;
+	position: fixed;
+	top: 85px;
+	right: 85px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.squarethree {
+	color: white;
+	line-height: 32px;
+	text-align: center;
+	background: black;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.squarethree::after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: inherit;
+	left: 75px;
+	/*向左侧外部延伸箭头box的一半宽度*/
+	position: absolute;
+	transform: rotate(45deg);
+	/*旋转45度*/
+	top: 50%;
+	/*箭头在数值方向上居中*/
+	margin-top: -5px;
+}
+/*大气泡框*/
+.operate{
+	width: 90px;
+	/*border: 1px solid gray;*/
+	box-shadow: 0px 0px 10px 2px rgb(255,182,193);
+	border-radius: 5px;
+	position: fixed;
+	top: 168px;
+	right: 52px;
+	padding:10px 0;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: 0.2s;
+}
+.operate li{
+	width: 100%;
+	height: 30px;
+	color: rgb(47,79,79);
+	line-height: 30px;
+	font-size: 13px;
+	text-indent: 10px;
+	cursor: pointer;
+}
+.operate li:hover{
+	background: rgba(100,149,237,0.3);
+	color: rgb(100,149,237);
+}
+.operate::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	border-left: 1px solid rgb(255,182,193);
+	border-top: 1px solid rgb(255,182,193);
+	left: 70px;
+	/*向左侧外部延伸箭头box的一半宽度*/
+	position: absolute;
+	transform: rotate(45deg);
+	/*旋转45度*/
+	top: -5px;
+	/*箭头在数值方向上居中*/
+}
+.arrows{
+	transition: 0.2s;
+}
+.same-shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	background: rgba(0,0,0,0.3);
+}
+.frame{
+	width: 200px;
+	height: 100px;
+	background: white;
+	border-radius:5px;
+	margin: 0 auto;
+	transform: translateY(320px);
+}
+.blibli{
+	display: inline-block;
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	margin: 20px 25px;
+}
+.blibli img{
+	float: left;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.confirm{
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	/*border: 1px solid black;*/
+	background: #63B8FF;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	color: white;
+	border-radius: 3px;
+	float: right;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.delete-shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background: rgba(0,0,0,0.3);
+}
+			.popupthree{
+				width: 400px;
+				height: 120px;
+				background: white;
+				margin: auto;
+				border-radius: 5px;
+				position: relative;
+				top: 320px;
+			}
+			.closethree{
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				cursor: pointer;
+			}
+			.hint{
+				width: 25px;
+				height: 25px;
+				margin: 0 10px;
+				vertical-align: middle;
+			}
+			.popupthree span{
+				display: inline-block;
+				width: 200px;
+				height: 30px;
+				line-height: 30px;
+				margin: 30px 0 10px 20px;
+				color: #606266;
+				font-size: 14px;
+			}
+			.popupthree div{
+				display: inline-block;
+				width: 50px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 5px 0 0 0;
+				font-size: 12px;
+				cursor: pointer;
+			}
+			.cancelthree{
+				margin-left: 250px !important;
+				border-radius: 5px;
+				border: 1px solid #dcdfe6;
+			}
+			.cancelthree:hover{
+				background: rgba(100,149,237,0.3);
+				color: rgb(100,149,237);
+				border: 1px solid rgba(100,149,237,0.3);
+			}
+			.confirmthree{
+				margin-left: 14px !important;
+				background: cornflowerblue;
+				color: white;
+				border-radius: 5px;
+				border: 1px solid cornflowerblue;
+			}

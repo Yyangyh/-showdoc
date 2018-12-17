@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.matte{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+}
+.upload-img{
+	display: block;
+	width: 600px;
+	height: 450px;
+	background: white;
+	border-radius: 3px;
+	margin: auto;
+	transform: translateY(50%);	
+}
+.upload-head{
+	width: 100%;
+	height: 30px;
+}
+.upload-head img{
+	width: 30px;
+	height: 30px;
+	float: right;
+	cursor: pointer;
+}
+.upload-head span{
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: 15px;
+}
+.solid{
+	display: inline-block;
+	width: 570px;
+	height: 400px;
+	border: 1px solid #ddd;
+	margin:  0 14px;
+	position: relative;
+}
+.solid:after{
+	content: '';
+	position: absolute;
+	width: 550px;
+	height: 380px;
+	border: 1px dashed #ddd;
+	top: 10px;
+	left: 10px;
+	z-index: -1;
+}
+.click-upload{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	border: 1px solid #ddd;
+	margin: 25px 25px;
+	position: relative;
+	cursor: pointer;
+}
+.click-upload img{
+	width: 90px;
+	height: 90px;
+	margin: 25px;
+}
+#bdd{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.insert{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	margin: 25px 24px;
+	cursor: pointer;
+	background: black;
+}
+.up-img{
+	width: 140px;
+	height: 140px;
+}
+.opc{
+	width: 140px;
+	height: 0px;
+	position: absolute;
+	z-index: 1;
+	background: rgba(0,0,0,.5);
+	transition: 0.3s;
+	overflow: hidden;
+}
+.del{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	right: 5px;
+	position: absolute;
+	z-index: 10;
+}
+.replace{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 5px 0 5px 5px;
+	background: url(../img/replace.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.redd{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}

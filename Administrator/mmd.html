@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>得实云文档管理系统</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/mmd.css"/>
+		<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mmd.js"></script>-->
+		<script src="js/require.js" data-main ="js/mmd/main.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<section>
+			<div class="main-box">
+				<ul class="header-dom">
+					<li class="adddocument">添加目录</li>
+					<li class="back">返回</li>
+				</ul>
+				<div class="title">
+					<span>目录名</span>
+					<span>序号</span>
+					
+					<span>操作</span>
+				</div>
+				<div class="scroll">
+				<!--<div class="title-name">
+					<span class="caption">新文档</span>
+					<span style="width: 100px;">
+						<div class="redact">编辑</div>
+						<div class="delete">删除</div>
+					</span>
+				</div>-->
+				</div>
+			</div>
+		</section>
+		<section class="shade">
+			<div class="popup">
+				<img src="img/close.png" class="closeone"/>
+				<span>目录名 ：</span>
+				<input type="text" name="" id="creat" value="" placeholder="请输入目录名" onkeydown="if(event.keyCode==32) return false"/>
+				<span>上级目录：</span>
+				<div class="select">
+					<span>无</span>
+					<img src="img/newdown.png"/>
+				</div>
+				<span>序号</span>
+				<input type="text" name="" id="" placeholder="(可选)默认是99，数字越小越靠前" value="" />
+				<div class="cancel">取消</div>
+				<div class="confirm">确定</div>
+				
+				<ul class="operate">
+					<li>无</li>
+				</ul>
+			</div>
+		</section>
+		<section class="shadetwo">
+			<div class="popuptwo">
+				<img src="img/close.png" class="closetwo"/>
+				<span>目录名 ：</span>
+				<input type="text" name="" id="" value="" class="change" onkeydown="if(event.keyCode==32) return false"/>
+				<span>上级目录：</span>
+				<div class="select">
+					<span>无</span>
+					<img src="img/newdown.png"/>
+				</div>
+				<span>序号 ：</span>
+				<input type="text" name="" id="" value="" class="serial"  onkeydown="if(event.keyCode==32) return false"/>
+				<div class="canceltwo">取消</div>
+				<div class="confirmtwo">确定</div>
+				
+				<ul class="operate">
+					<li>无</li>
+				</ul>
+			</div>
+		</section>
+		<section class="delete-shade">
+			<div class="popupthree">
+				<img src="img/close.png" class="closethree"/>
+				<span><img src="img/tip.png" class="hint"/>确认删除吗？</span>
+				<div class="cancelthree">取消</div>
+				<div class="confirmthree">确定</div>
+			</div>
+		</section>
+	</body>
+</html>
